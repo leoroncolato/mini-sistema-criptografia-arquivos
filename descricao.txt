@@ -1,0 +1,30 @@
+- Gerar chave publica para criptografar
+- Gerar chave privada  para decriptar
+- Dois sockets difernets
+- O algo1 gera a PrivateKey, porém o socket do Algo2 recebe, tal, descriptografa  gera assinatura digital
+
+Situação:
+- Empresa A - Envia o contrato
+- Empresa B - Recebe o Contrato
+
+- Criptografa o documento com AES -->  Gerar chave assimétrica  --> criptografar a chave com a chave Pública (RSA) da Empresa B --> criar assinatura digital com a chave privada da Empresa A e a assinatura deve ser enviada com os dados transmitidos 
+
+O pacote final deve conter:
+- chave simétrica criptografada
+- o documento criptografada
+- informações para descriptografia
+- assinatura digital
+
+Arquitetura: 
+- Sistema de Geração de Chaves
+- Cada empresa possuir um par de chaves criptografada
+- Algoritmo RSA:
+	* Chave Publica (Compartilhada a outras Organizações)
+	* Chave Privada (Decriptar dados recebidos e gerar assinaturas digitais)
+
+- Fluoxagrama:
+	1. Gerar par de chaves para Empresa A e Empresa B
+	2. Criar um contrato de teste em PDF
+	3. Excecutar o processo de preparação do contrato
+	4. Executar processo de validação e descriptografia
+	5. Confirmar se o contrato corresponde ao Original
