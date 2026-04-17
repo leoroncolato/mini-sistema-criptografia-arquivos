@@ -61,7 +61,7 @@ def main():
                 contrato_descriptografado = receiver.process_received_package(pacote_json)
                 
                 # Salva o arquivo em disco
-                caminho_final = "dados/Contrato_Recebido_Validado.pdf"
+                caminho_final = "data/Contrato_Recebido_Validado.pdf"
                 FileHandler.write_file(caminho_final, contrato_descriptografado)
                 print(f"\n[SUCESSO] Contrato recuperado e salvo em: {caminho_final}")
                 

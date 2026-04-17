@@ -32,7 +32,7 @@ def main():
     sender = SenderService(priv_key_a, pub_key_b)
 
     # Lê o contrato original em PDF [cite: 143]
-    caminho_pdf = "dados/Modelo de Contrato.pdf"
+    caminho_pdf = "data/contrato_teste.pdf"
     print(f"[Empresa A] Lendo arquivo: {caminho_pdf}")
     contrato_bytes = FileHandler.read_file(caminho_pdf)
 
