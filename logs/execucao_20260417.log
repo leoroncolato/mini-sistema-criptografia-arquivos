@@ -1,0 +1,11 @@
+2026-04-17 15:14:06,612 - Empresa_B - INFO - === EMPRESA B (SERVIDOR) INICIADA ===
+2026-04-17 15:14:06,651 - Empresa_B - INFO - [Empresa B] Chaves carregadas do disco.
+2026-04-17 15:14:06,653 - Empresa_B - INFO - [Empresa B] Aguardando conexão na porta 65432...
+2026-04-17 15:14:09,305 - Empresa_A - INFO - === EMPRESA A (CLIENTE) INICIADA ===
+2026-04-17 15:14:09,354 - Empresa_A - INFO - [Empresa A] Chaves carregadas do disco.
+2026-04-17 15:14:09,356 - Empresa_A - INFO - [Empresa A] Lendo arquivo: data/contrato_teste.pdf
+2026-04-17 15:14:09,365 - Empresa_A - INFO - [Empresa A] Conectando ao servidor em 127.0.0.1:65432...
+2026-04-17 15:14:09,370 - Empresa_A - INFO - [Empresa A] Pacote criptografado enviado com sucesso pela rede!
+2026-04-17 15:14:09,370 - Empresa_B - INFO - [Empresa B] Conectado a ('127.0.0.1', 62337)
+2026-04-17 15:14:09,379 - Empresa_B - INFO - 
+[SUCESSO] Contrato recuperado e salvo em: data/Contrato_Recebido_Validado.pdf
