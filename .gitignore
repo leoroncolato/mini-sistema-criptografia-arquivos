@@ -1,3 +1,5 @@
 chaves/*
 !chaves/.gitkeep
 
+**/__pycache__/
+*.pyc
